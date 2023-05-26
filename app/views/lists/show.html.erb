@@ -1,7 +1,7 @@
 <h1><%= @list.name %></h1>
 <%= link_to 'Add Movie', new_list_bookmark_path(@list.id) %>
 <%= link_to 'Lists Home', lists_path %>
-
+<%= cl_image_path @list.photo.key %>
 
 <div>
   <h2>Movies</h2>

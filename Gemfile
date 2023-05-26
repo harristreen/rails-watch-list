@@ -14,6 +14,7 @@ gem "font-awesome-sass", "~> 6.1"
 gem "simple_form"
 gem "sassc-rails"
 gem "dotenv-rails", groups: [:development, :test]
+gem "cloudinary"
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
