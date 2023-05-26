@@ -1,12 +1,10 @@
 <div>
-  <div class="banner">
-    <div class="container">
-      <a class="btn btn-flat btn-rounded" href="#">CREATE LIST</a>
-    </div>
+  <div class="banner justify-content-center">
+    <%= link_to "Create List", new_list_path, class: "btn btn-flat btn-rounded" %>
   </div>
 
   <div>
-    <h2>Your existing lists</h2>
+    <h2>Your Lists</h2>
     <% @lists.each do |list|%>
       <%= link_to list.name, list_path(list.id) %>
     <% end %>
