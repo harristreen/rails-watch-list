@@ -1,0 +1,14 @@
+<div>
+  <div class="banner">
+    <div class="container">
+      <a class="btn btn-flat btn-rounded" href="#">CREATE LIST</a>
+    </div>
+  </div>
+
+  <div>
+    <h2>Your existing lists</h2>
+    <% @lists.each do |list|%>
+      <%= link_to list.name, list_path(list.id) %>
+    <% end %>
+  </div>
+</div>
